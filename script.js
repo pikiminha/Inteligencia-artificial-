@@ -6,27 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Você acha a agricultura importante para a economia?"
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto: "Sim!",
+                afirmacao: "A agricultura é importante para a economia por ser uma das principais formas de sustentação do país com sua exportação. "
+            },
+            {
+                texto: "Não!",
+                afirmacao: "Com a mudança climática sendo muito forte pode acabar afetando o meio ambiente, criando dificuldades nessa area. "
+            }
         ]
-    },
-    {
-        enunciado: "Pergunta 2",
-        alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
-        ]
-    }
-]; 
-
-let atual = 0;
-let perguntaAtual;
-
-function mostraPergunta() {
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-}
-mostraPergunta()
-
+},
